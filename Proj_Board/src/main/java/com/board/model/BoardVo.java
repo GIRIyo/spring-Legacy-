@@ -3,7 +3,8 @@ package com.board.model;
 import java.sql.Date;
 
 public class BoardVo {
-	  private int bno;
+	  	
+		private int bno;
 	    
 	    /* 게시판 제목 */
 	    private String title;

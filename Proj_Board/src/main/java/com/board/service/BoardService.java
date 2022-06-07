@@ -9,4 +9,6 @@ public interface BoardService {
 	 public void enroll(BoardVo board);
 	 
 	 public List<BoardVo> getList();
+	 
+	 public BoardVo getPage(int bno);
 }

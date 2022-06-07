@@ -10,4 +10,6 @@ public interface BoardMapper {
 	 
 	 public List<BoardVo> getList();
 	 
+	 public BoardVo getPage(int bno);
+	 
 }

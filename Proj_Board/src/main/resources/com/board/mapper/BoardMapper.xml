@@ -12,4 +12,7 @@
  		select * from vam_board
  </select>
  
+   <select id="getPage" resultType="com.board.model.BoardVo">
+        select * from vam_board where bno = #{bno}
+    </select>
   </mapper>
