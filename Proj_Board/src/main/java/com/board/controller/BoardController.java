@@ -60,4 +60,22 @@ public class BoardController {
         
     }
     
+    @GetMapping("/modify")
+    public void boardModifyGET(int bno, Model model) {
+        
+        model.addAttribute("pageInfo", bservice.getPage(bno));
+        
+    }
+    
+    @PostMapping("/modify")
+    public String boardModifyPOST(BoardVo board, RedirectAttributes rttr) {
+        
+        bservice.modify(board);
+        
+        rttr.addFlashAttribute("result", "modify success");
+        
+        return "redirect:/board/list";
+        
+    }
+    
 }

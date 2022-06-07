@@ -11,4 +11,6 @@ public interface BoardService {
 	 public List<BoardVo> getList();
 	 
 	 public BoardVo getPage(int bno);
+	 
+	 public int modify(BoardVo board);
 }

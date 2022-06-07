@@ -12,4 +12,5 @@ public interface BoardMapper {
 	 
 	 public BoardVo getPage(int bno);
 	 
+	 public int modify(BoardVo board);
 }
