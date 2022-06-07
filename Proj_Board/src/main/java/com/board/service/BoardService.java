@@ -13,4 +13,6 @@ public interface BoardService {
 	 public BoardVo getPage(int bno);
 	 
 	 public int modify(BoardVo board);
+	 
+	 public int delete(int bno);
 }
