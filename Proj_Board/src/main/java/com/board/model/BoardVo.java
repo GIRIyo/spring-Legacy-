@@ -11,12 +11,6 @@ public class BoardVo {
 	    /* 게시판 내용 */
 	    private String content;
 	    
-	    @Override
-		public String toString() {
-			return "BoardVo [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer
-					+ ", regdate=" + regdate + ", updateDate=" + updateDate + "]";
-		}
-
 		/* 게시판 작가 */
 	    private String writer;
 	    
@@ -25,7 +19,12 @@ public class BoardVo {
 	    
 	    /* 수정 날짜 */
 	    private Date updateDate;
-
+	    
+	    @Override
+	 		public String toString() {
+	 			return "BoardVo [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer
+	 					+ ", regdate=" + regdate + ", updateDate=" + updateDate + "]";
+	 		}
 		public int getBno() {
 			return bno;
 		}

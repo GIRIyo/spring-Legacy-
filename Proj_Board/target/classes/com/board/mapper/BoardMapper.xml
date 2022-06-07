@@ -6,5 +6,5 @@
   
   <insert id="enroll">
  	 	insert into vam_board(title, content, writer) values (#{title}, #{content}, #{writer})
- 	</insert>
+ </insert>
   </mapper>
