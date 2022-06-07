@@ -7,4 +7,9 @@
   <insert id="enroll">
  	 	insert into vam_board(title, content, writer) values (#{title}, #{content}, #{writer})
  </insert>
+ 
+ <select id="getList" resultType="com.board.model.BoardVo">
+ 		select * from vam_board
+ </select>
+ 
   </mapper>
